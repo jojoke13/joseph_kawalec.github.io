@@ -1,0 +1,99 @@
+/****************************************************************/
+/*   Design:   CRISCO						*/
+/*   File:     Text formats                                     */
+/*--------------------------------------------------------------*/
+/*   Authors:   B. Brard, M. Morel                              */
+/*   Date:     April 20, 2009                                   */
+/*   Homepage: wwww.crisco.unicaen.fr                           */
+/****************************************************************/
+*{padding:0; margin:0;}
+html {font-size: 100%;}
+body {font-size: 1em;}
+html, body {height: 100%;}
+html{overflow-y: scroll;} /* Force la barre de défilement horizontal pour éviter que le centrage ne saute. */
+/*body {font:100% tahoma,arial,helvetica,"bitstream vera sans",sans-serif;color: #000000;background-image:url("../_img/dico_blanc_clair2.jpg");background-position:50% 180px;background-repeat:no-repeat;line-height: 1.6;border: none;text-align:left;}*/
+body {background-color:#FFFFFF;font:100% tahoma,arial,helvetica,"bitstream vera sans",sans-serif;color: #000000;line-height: 1.6;border: none;text-align:left;}
+#page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -41px; /* La borne basse est la valeur négative de la hauteur du pied */
+}
+#nettoyeur {height:41px;} /* Même hauteur que le pied + 1 */
+
+
+div#conteneur{width:100%;margin-bottom:2em;}
+div#contenu{margin: 0 5%;}
+form{margin-bottom:1em;margin-top:1em;}
+form p{text-align:left;}
+input {font-size: 100%;}
+select, textarea{font-size: 120%;}
+#suggestion{margin-bottom:1em;}
+.titre{margin-top:.8em;}
+div#cliques ul{font-size:.8em;}
+div#mention{margin: 3em 5% 2em;font-size:.8em;}
+div#chapeau{margin-top:1em; margin-bottom:1em;}
+div#liens{float:right;}
+
+/********************/
+/*   TYPOGRAPHIE    */
+/********************/
+
+h1, h2, h3, h4, h5, h6 {font-size: 1em; font-weight: normal;}
+a img{border:none;}
+
+/*a:visited {text-decoration: none; color: #0000C0;}*/ /* bleu 0000C0 0040B0 4000B0 rouge 801010 A00000 C03030 FF8080 */
+/*a:focus,a:hover,a:active, a:visited:hover {text-decoration: underline;}*/
+a:link {text-decoration: none; color: #0000C0;} /* bleu 0000C0 0040B0 4000B0 rouge 801010 A00000 C03030 FF8080 */
+a:visited{color: #700090;}a:focus,a:hover{text-decoration: underline;},a:active, a:visited:hover
+
+/* Titraille / Intertitres */
+h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; font-weight: normal; font-size: 1em;}
+h1 { font-size: 1.70em; color: #000; }
+h2 { font-size: 1.40em; font-weight: normal; margin-bottom:1em;}
+h3 { font-size: 1.20em;}
+h4 { font-size: .8em; font-weight: normal; }
+
+/* Autres enrichissements typo */
+strong { font-weight: bold; }
+em { font-style: italic; }
+abbr, acronym { border-bottom: 1px dotted; cursor: help; }
+small { font-size: 0.90em; color: #666; }
+dfn { font-weight: bold; color: #666; }
+del { text-decoration: line-through; }
+ins { color: red !important; text-decoration: none; }
+sup, sub { font-size: .8em; font-variant: normal; }
+
+
+/********************/
+/*       ENTETE     */
+/********************/
+
+div#entete{background: #000 url(/_img/bandeau-ombre.jpg) repeat-x bottom left;padding-bottom:31px;}
+#entete h1{display:none;}
+#entete #bandeau{width:100%;height:100px;background: url(/_img/bandeau-droit.jpg) no-repeat top right;border-bottom:1px solid #666;}
+#bandeau img{background: transparent url(/_img/bandeau-gauche.jpg) no-repeat top left;}
+#menu {font-size:80%;padding-right:8px;padding-left:8px;padding-top:4px;padding-bottom:4px;}
+#menu li{display:inline;margin: 0;padding: 0 25px 0px 5px;text-transform:uppercase;}
+#menu a{text-decoration:none;color: #fff;}
+#menu a:visited {text-decoration:none;color: #fff;}
+#menu a:hover {color: #FF9999;}
+#menu a:visited:hover {color: #FF9999;}
+
+
+/********************/
+/*      PIED        */
+/********************/
+#pied {
+	height: 40px; /* .push must be the same height as .footer */
+	background: #000000;
+	text-align:center;
+	color: #ffffff;
+	font-size: .8em;
+}
+
+#pied p {text-align:center;}
+#pied a {text-decoration:none; color:#fff;}
+#pied a:hover {text-decoration:none; color:#FF9999;}
+#pied a:visited {color:#ffffff;}
+#pied a:visited:hover {color:#FF9999;}
